@@ -18,8 +18,11 @@ def cnom():
         gasto_pres = 0
 
     #Calculo del ISR
-    exdente = sueldo_bruto - 37000
-    isr = int (exdente * 0.10)
+    if sueldo_bruto > 37000:
+        exdente = sueldo_bruto - 37000 
+    else:
+        exdente = 0
+    isr = int (exdente * 0.10)    
     #Calculo del SS
     ss = int (sueldo_bruto * 0.15)
     #Calcuo AFP
@@ -58,7 +61,11 @@ def cnom():
             print ("[+] Total de retenciones: " + str(total_descuento))
             print ("[+] Sueldo Neto: " + str(sueldo_neto))
 
+
 if __name__ ==  '__main__':
     cnom()
+
+time.sleep(10)
+
 
 #By Maicker Miguel Ravelo Flores (dstark)
