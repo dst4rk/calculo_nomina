@@ -19,10 +19,10 @@ def cnom():
 
     #Calculo del ISR
     if sueldo_bruto > 37000:
-        exdente = sueldo_bruto - 37000 
+        excedente = sueldo_bruto - 37000 
     else:
-        exdente = 0
-    isr = int (exdente * 0.10)    
+        excedente = 0
+    isr = int (excedente * 0.10)    
     #Calculo del SS
     ss = int (sueldo_bruto * 0.15)
     #Calcuo AFP
